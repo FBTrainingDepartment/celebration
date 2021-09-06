@@ -81,6 +81,15 @@ h1{
   border-bottom-color: #fff;
 }
 
+.bgimage{
+  background-image: url("images/wave.jpg");
+  width: 414px;
+  height: 736px;
+  background-size: cover;
+  opacity: 70%;
+  z-index: -1;
+  }
+
 @media (min-width: 48em) {
   .masthead-brand {
     float: left;
@@ -93,6 +102,15 @@ h1{
         top: 2.5rem;
         right: 15rem;
 }
+  .bgimage{
+    background-image: url("images/wave.jpg");
+    width: 769px;
+    height: 710px;
+    background-size: cover;
+    opacity: 70%;
+    z-index: -1;
+  }
+
 }
 
 
@@ -116,20 +134,19 @@ h1{
   color: rgba(255, 255, 255, .5);
 }
 
-.bgimage{
-  background-image: url("images/egg.jpg");
-  position: absolute;
-  width: 414px;
-  height: 736px;
-  background-size: cover;
-  opacity: 50%;
-  z-index: -1;
-  }
+
 .myheader{
   text-align: center;
   align-items: stretch;
 }
+.child {
+    position: absolute;
+    top: 50%;  /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
 
+    transform: translate(-50%, -50%); /* This is a shorthand of
+                                         translateX(-50%) and translateY(-50%) */
+}
 
 #show{
   text-shadow: 3px;
