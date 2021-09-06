@@ -82,11 +82,11 @@ h1{
 }
 
 .bgimage{
-  background-image: url("images/wave.jpg");
+  background-image: url("images/egg.jpg");
   width: 414px;
   height: 736px;
   background-size: cover;
-  opacity: 70%;
+  opacity: 50%;
   z-index: -1;
   }
 
@@ -103,12 +103,9 @@ h1{
         right: 15rem;
 }
   .bgimage{
-    background-image: url("images/egg.jpg");
     width: 769px;
     height: 710px;
-    background-size: cover;
-    opacity: 50%;
-    z-index: -1;
+
   }
 
 }
