@@ -83,9 +83,8 @@ h1{
 
 .bgimage{
   background-image:url("images/egg.jpg");
-  position:absolute;
-  width: 414px;
-  height: 736px;
+  width: 700px;
+  height: 800px;
   background-size: cover;
   filter: contrast(70%);
   z-index: -1;
