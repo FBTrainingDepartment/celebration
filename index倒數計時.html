@@ -1,0 +1,125 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.80.0">
+    <!-- <title>2021年度富邦尊師慶典感謝影片</title> -->
+    <title>2021年度尊師慶典彩蛋</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/cover/">
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/4.6/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/4.6/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/4.6/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/4.6/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/4.6/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+<link rel="icon" href="/docs/4.6/assets/img/favicons/favicon.ico">
+<meta name="msapplication-config" content="/docs/4.6/assets/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#563d7c">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+
+    <script type="text/javascript">
+window.onload=function(){
+  var timer=null;
+  var show=document.getElementById("show");
+  function show_date_time(){
+    var target=new Date("2021/9/28");
+    var today=new Date();
+    var timeold=(target.getTime()-today.getTime());
+    var sectimeold=timeold/1000
+    var secondsold=Math.floor(sectimeold);
+    var msPerDay=24*60*60*1000
+    var e_daysold=timeold/msPerDay
+    var daysold=Math.floor(e_daysold);
+    var e_hrsold=(e_daysold-daysold)*24;
+    var hrsold=Math.floor(e_hrsold);
+    var e_minsold=(e_hrsold-hrsold)*60;
+    var minsold=Math.floor((e_hrsold-hrsold)*60);
+    var seconds=Math.floor((e_minsold-minsold)*60);
+    if(daysold<0){
+      document.getElementById("time").innerHTML="Oh!您的彩蛋馬上就來了，可能有一點點遲到了～";
+      clearInterval(timer);
+    }
+    else{
+      if (daysold<10) {daysold="0"+daysold}
+      if (hrsold<10) {hrsold="0"+hrsold}
+      if (minsold<10) {minsold="0"+minsold}
+      if (seconds<10) {seconds="0"+seconds}
+      show.innerHTML=daysold+"天"+hrsold+"小時"+minsold+"分"+seconds+"秒";
+    }
+  }
+  timer=setInterval(show_date_time,1000);
+}
+</script>
+  </head>
+  <body class="text-center bgimage">
+
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="masthead mb-auto">
+    <div class="inner">
+        <div class="myheader">
+          <h3 class="masthead-brand">尊師小<span style="color:pink;font-size:2rem;">彩蛋</span></h3>
+          <p class="myp">即將登場！讓我們一起為它的出現集氣！</p>
+        </div>
+
+      <!-- <h3 class="masthead-brand">2021尊師慶典感謝影片</h3> -->
+      <nav class="nav nav-masthead justify-content-center">
+        <a class="nav-link active" href="index.html">Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <main role="main" class="inner cover">
+    <div >
+      "<h1>距離9/28彩蛋公布還有</h1>"
+      <h2 id="show" class="bg-dark text-danger"></h2>
+    </div>
+    <!-- <h1 class="cover-heading">親愛的講師，感謝您！</h1>
+    <p class="lead">我們希望藉由這部影片，將我們的感謝傳達給您。請您點擊下方的按鈕，讓我們開啟一段美好的時光！</p>
+    <p class="lead">
+      <a href="#" class="btn btn-lg btn-secondary">點擊開啟影片</a>
+    </p> -->
+  </main>
+
+  <footer class="mastfoot mt-auto">
+    <div class="inner">
+      <p>Copy Right by 訓練企劃管理部.</p>
+    </div>
+  </footer>
+</div>
+
+
+
+  </body>
+</html>
