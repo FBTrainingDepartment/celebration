@@ -88,6 +88,7 @@ h1{
   background-size: cover;
   filter: contrast(70%);
   z-index: -1;
+  margin:0;
   }
 
 @media (min-width: 48em) {
