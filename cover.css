@@ -89,6 +89,7 @@ h1{
   background-size: cover;
   filter: contrast(70%);
   z-index: -1;
+  display: flex;
   }
 
 @media (min-width: 48em) {
