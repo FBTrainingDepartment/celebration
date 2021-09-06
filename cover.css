@@ -119,7 +119,7 @@ h1{
 .bgimage{
   background-image: url("images/egg.jpg");
   background-size: cover;
-}
+  opacity: 0.5;
 .myheader{
   text-align: center;
   align-items: stretch;
