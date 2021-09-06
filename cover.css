@@ -82,7 +82,7 @@ h1{
 }
 
 .bgimage{
-  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)) url("images/egg.jpg");
+  background-image:url("images/egg.jpg");
   width: 414px;
   height: 736px;
   background-size: cover;
